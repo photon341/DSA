@@ -40,7 +40,7 @@ int main(){
     printf("Binary Tree:");
     display(root);
     printf("\n\nChoose What to do: \n");
-    printf("\n1.Insert into the Binary Tree\n2.Delete From the Binary Tree\n3.Post Order\n4.Pre Order\n5.Inorder\n");
+    printf("\n0.To Exit\n1.Insert into the Binary Tree\n2.Delete From the Binary Tree\n3.Post Order\n4.Pre Order\n5.Inorder\n");
     while (1){
         printf("\nEnter your Choose: ");
         scanf("%d",&choice);
