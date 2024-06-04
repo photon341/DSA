@@ -4,7 +4,7 @@
 
 int STACK[SIZE];
 
-int TOP=-1,BOTTOM=-1;
+int TOP=-1;
 void Push(int data);
 void Pop();
 void Display();
@@ -56,18 +56,12 @@ int main(){
 }
 
 void Push(int data){
-    if(TOP == 100){
+    if(TOP == 100-1){
         printf("Not space to store!!");
-        TOP = BOTTOM =-1;
     }else{
         TOP++;
         STACK[TOP] = data;
-        
     }
-    if(BOTTOM == -1){
-        BOTTOM++;
-    }
-
 }
 void Pop(){
     if(TOP == -1){
@@ -75,17 +69,11 @@ void Pop(){
         TOP = BOTTOM = -1;
     }else{
         TOP--;
-    }
-    if (TOP == -1)
-    {
-        TOP = BOTTOM = -1;
-    }
-    
+    }    
 }
 void Display(){
     if(TOP == -1){
         printf("There is Nothing to Show!!");
-        TOP = BOTTOM = -1;
     }else{
         for(int i=TOP;i>=0;i--){
             printf("%d\n",STACK[i]);
