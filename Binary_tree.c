@@ -28,11 +28,12 @@ int main(){
     int data, n, choice;
     printf("ENTER Number node in the Binary Tree: ");
     scanf("%d", &n);
-    printf("Enter Data into the Binary Tree: ");
+    printf("Enter Root Data into the Binary Tree: ");
     scanf("%d", &data);
     root->data = data;
     root->left = NULL;
     root->right = NULL;
+    printf("Enter data into child node: ");
     for(int i = 1; i < n; i++){
         scanf("%d", &data);
         insert(data);
