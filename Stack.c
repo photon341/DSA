@@ -66,7 +66,6 @@ void Push(int data){
 void Pop(){
     if(TOP == -1){
         printf("Nothing to delete!!\n");
-        TOP = BOTTOM = -1;
     }else{
         TOP--;
     }    
